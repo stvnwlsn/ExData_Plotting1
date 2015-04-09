@@ -1,0 +1,6 @@
+# Files and directories not being tracked
+
+.RData
+.Rhistory
+exdata-data-household_power_consumption.zip
+household_power_consumption.txt

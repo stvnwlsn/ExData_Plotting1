@@ -19,8 +19,10 @@ with(sub_dataset, {
     with(sub_dataset, points(DateTime, as.numeric(as.character(Sub_metering_2)), type="l", col="red"))
     with(sub_dataset, points(DateTime, as.numeric(as.character(Sub_metering_3)), type="l", col="blue"))
     legend("topright", lty= c('solid', 'solid', 'solid') , 
-           col = c("black", "red", "blue"), legend= c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n")
+           col = c("black", "red", "blue"), 
+           legend= c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n")
     
-    plot(DateTime, as.numeric(as.character(Global_reactive_power)), type="l", xlab="datetime", ylab="Global_reactive_power")
+    plot(DateTime, as.numeric(as.character(Global_reactive_power)), 
+         type="l", xlab="datetime", ylab="Global_reactive_power")
 })
 dev.off()

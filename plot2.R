@@ -1,4 +1,5 @@
-dataset <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", stringsAsFactors = TRUE, na.strings = c("?"))
+dataset <- read.table("household_power_consumption.txt", header = TRUE, sep = ";",
+                      stringsAsFactors = TRUE, na.strings = c("?"))
 
 sub_dataset <- subset(dataset, Date %in% c("1/2/2007", "2/2/2007"))
 
